@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.build-deps/
+build/
+dist/
+*.spec
+.tools/
+tmp/
+.pytest_cache/
+.coverage
+PROGRESS.md
+report/qa/
+

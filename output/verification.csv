@@ -1,0 +1,11 @@
+﻿case,expected_segment_id,actual_segment_id,expected_offset,actual_offset,expected_access,actual_access,expected_status,actual_status,expected_physical_address,actual_physical_address,passed,detail
+1,0,0,120,120,r,r,OK,OK,1120,1120,PASS,
+2,0,0,0,0,x,x,OK,OK,1000,1000,PASS,
+3,0,0,399,399,r,r,OK,OK,1399,1399,PASS,
+4,0,0,400,400,r,r,SEGMENTATION_FAULT,SEGMENTATION_FAULT,,,PASS,
+5,0,0,-1,-1,r,r,SEGMENTATION_FAULT,SEGMENTATION_FAULT,,,PASS,
+6,1,1,50,50,w,w,OK,OK,2050,2050,PASS,
+7,2,2,499,499,r,r,OK,OK,3499,3499,PASS,
+8,9,9,10,10,r,r,SEGMENT_NOT_FOUND,SEGMENT_NOT_FOUND,,,PASS,
+9,0,0,100,100,w,w,PROTECTION_FAULT,PROTECTION_FAULT,,,PASS,
+10,1,1,20,20,x,x,PROTECTION_FAULT,PROTECTION_FAULT,,,PASS,

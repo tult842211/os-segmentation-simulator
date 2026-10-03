@@ -1,0 +1,27 @@
+{
+  "measured_at_utc": "2026-10-03T16:37:38.461581+00:00",
+  "python_version": "3.12.14",
+  "implementation": "CPython",
+  "operating_system": "Windows",
+  "os_release": "11",
+  "architecture": "AMD64",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "timer": "time.perf_counter",
+  "seed": 12,
+  "repeats": 5,
+  "stress_test": {
+    "addresses": 100000,
+    "segments": 1000,
+    "seed": 12,
+    "streaming": true,
+    "elapsed_ms": 331.918,
+    "status_counts": {
+      "OK": 39520,
+      "PROTECTION_FAULT": 32490,
+      "SEGMENTATION_FAULT": 18050,
+      "SEGMENT_NOT_FOUND": 9940
+    },
+    "physical_checksum": 5021200990,
+    "independent_formula_check": "PASS"
+  }
+}

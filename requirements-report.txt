@@ -1,0 +1,3 @@
+# Optional: only for rebuilding the PDF report, not needed by the desktop app.
+reportlab>=4.0,<5
+
