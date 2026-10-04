@@ -295,7 +295,7 @@ py -m unittest discover -s tests -v
 py scripts/verify.py
 ```
 
-Lần chạy được lưu trong `output/test-results.txt` đạt **65/65 kiểm thử**, gồm kiểm thử GUI, không bỏ qua ca nào; thời gian **1,538 giây**, trên **Windows với Python 3.12.14**. `output/verification.csv` ghi expected/actual cho từng yêu cầu mẫu; cần xem cả trạng thái và địa chỉ. Nếu sửa lõi hoặc dữ liệu, phải chạy lại kiểm tra liên quan trước khi dùng minh chứng cũ.
+Lần chạy ngày 04/10/2026 được lưu trong `output/test-results.txt` đạt **69/69 kiểm thử**, gồm 13 kiểm thử GUI và 3 kiểm thử cập nhật số liệu báo cáo, không bỏ qua ca nào; thời gian **1,875 giây**, trên **Windows với Python 3.12.14**. `output/verification.csv` ghi expected/actual cho từng yêu cầu mẫu; cần xem cả trạng thái và địa chỉ. Nếu sửa lõi hoặc dữ liệu, phải chạy lại kiểm tra liên quan trước khi dùng minh chứng cũ.
 
 Khi có sai khác, giữ input tái hiện, tính lại expected bằng tay, xác định lỗi ở đọc file hay dịch địa chỉ rồi sửa. Bổ sung test hồi quy cho nguyên nhân đã tìm thấy. Không sửa expected để khớp actual nếu chưa chứng minh expected cũ sai. Kết quả thực nghiệm cùng các file nguồn kiểm tra là bằng chứng có thể xem lại, không thay cho việc hiểu các điều kiện đúng/sai.
 

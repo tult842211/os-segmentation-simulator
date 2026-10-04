@@ -19,6 +19,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.segmentation import LogicalAddress, Segment, SegmentTable
+from scripts.report_metrics import write_report_metrics
 
 
 def make_workload(segment_count: int, address_count: int, seed: int):
@@ -190,7 +191,8 @@ def main() -> int:
         "", "Chạy lại: `python scripts/benchmark.py`. CSV và JSON ghi số đo thật của lần chạy gần nhất.", "",
     ]
     (args.output_dir / "benchmark-summary.md").write_text("\n".join(lines), encoding="utf-8")
-    print(f"Stress {stress['addresses']}: {stress['independent_formula_check']}. Saved benchmark.csv, benchmark-summary.md, system-info.json.")
+    write_report_metrics(args.output_dir)
+    print(f"Stress {stress['addresses']}: {stress['independent_formula_check']}. Saved benchmark.csv, benchmark-summary.md, system-info.json, report-metrics.md.")
     return 0
 
 

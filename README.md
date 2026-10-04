@@ -183,6 +183,8 @@ python scripts/build_report.py
 
 Các gói này chỉ cần khi tạo PDF; ứng dụng Tkinter và unit test vẫn dùng thư viện chuẩn. File tạo ra là `report/OS_MEM_12_Report.pdf`.
 
+Benchmark tự cập nhật `output/report-metrics.md` từ CSV/JSON của lần đo vừa hoàn tất. Nếu chỉ muốn cập nhật bảng báo cáo từ số liệu đã lưu, chạy `python scripts/report_metrics.py` rồi `python scripts/build_report.py`.
+
 ## 8. Làm việc với GitHub
 
 Nên chia từng thay đổi thành commit có ý nghĩa: sửa kiểm tra biên, bổ sung ca test, chỉnh phần giải thích hoặc sửa giao diện. Thành viên clone repository, tạo nhánh, thay đổi, chạy test rồi mở pull request để người khác xem. Không cần tạo lại lịch sử commit theo tám tuần trong kế hoạch.

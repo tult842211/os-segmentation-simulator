@@ -53,7 +53,11 @@ test_large_batch_caps_widgets_but_exports_all_rows (test_gui.GuiIntegrationTests
 test_sample_batch_and_export_contain_all_statuses (test_gui.GuiIntegrationTests.test_sample_batch_and_export_contain_all_statuses) ... ok
 test_sample_startup_and_single_translation_button (test_gui.GuiIntegrationTests.test_sample_startup_and_single_translation_button) ... ok
 test_segment_csv_dialog_and_failed_reload_are_atomic (test_gui.GuiIntegrationTests.test_segment_csv_dialog_and_failed_reload_are_atomic) ... ok
+test_startup_reserves_screen_space_without_showing_window (test_gui.GuiIntegrationTests.test_startup_reserves_screen_space_without_showing_window) ... ok
 test_step_mode_reveals_trace_until_disabled (test_gui.GuiIntegrationTests.test_step_mode_reveals_trace_until_disabled) ... ok
+test_benchmark_completion_refreshes_snippet_without_manual_command (test_report_metrics.ReportMetricsTests.test_benchmark_completion_refreshes_snippet_without_manual_command) ... ok
+test_failed_or_missing_verification_never_claims_all_cases_passed (test_report_metrics.ReportMetricsTests.test_failed_or_missing_verification_never_claims_all_cases_passed) ... ok
+test_refresh_replaces_old_numbers_with_latest_saved_measurements (test_report_metrics.ReportMetricsTests.test_refresh_replaces_old_numbers_with_latest_saved_measurements) ... ok
 test_empty_expected_file_rejected (test_verification.VerificationTests.test_empty_expected_file_rejected) ... ok
 test_extra_actual_is_not_silently_ignored (test_verification.VerificationTests.test_extra_actual_is_not_silently_ignored) ... ok
 test_lookup_benchmarks_have_same_known_checksum (test_verification.VerificationTests.test_lookup_benchmarks_have_same_known_checksum) ... ok
@@ -65,6 +69,6 @@ test_wrong_input_identity_fails_even_if_answer_matches (test_verification.Verifi
 test_wrong_value_fails (test_verification.VerificationTests.test_wrong_value_fails) ... ok
 
 ----------------------------------------------------------------------
-Ran 65 tests in 1.538s
+Ran 69 tests in 1.875s
 
 OK

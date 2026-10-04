@@ -1,6 +1,6 @@
 # Số liệu thực nghiệm dùng trong báo cáo
 
-Đo ngày 03/10/2026 trên **CPython 3.12.14, Windows 11, AMD64**, CPU được hệ điều hành nhận diện là Intel64 Family 6 Model 154 Stepping 3. Đây là số đo của môi trường thực nghiệm này; thời gian trên máy khác hoặc lần chạy khác có thể thay đổi.
+Đo ngày 03/10/2026 trên **CPython 3.12.14, Windows 11, AMD64**, CPU được hệ điều hành nhận diện là Intel64 Family 6 Model 154 Stepping 3, GenuineIntel. Đây là số đo của môi trường thực nghiệm này; thời gian trên máy khác hoặc lần chạy khác có thể thay đổi.
 
 ## Đối chiếu tính đúng đắn
 
@@ -27,4 +27,4 @@ Dựng bảng gồm lập chỉ mục và kiểm tra chồng lấn, không gồm
 
 Ở cấu hình 1.000 segment / 10.000 địa chỉ, peak cấp phát Python được `tracemalloc` ghi nhận cho một lượt dịch riêng là **8.735.226 byte**. Chỉ số này gồm kết quả/trace; không phải RAM toàn tiến trình và không gồm input/bảng đã tồn tại.
 
-Nguồn số liệu trong repository: `output/verification.csv`, `output/benchmark.csv`, `output/system-info.json`. Phương pháp đầy đủ: `output/benchmark-summary.md`. Mã tái lập: `scripts/verify.py` và `scripts/benchmark.py`. Các file số liệu sẽ thay đổi khi chạy lại benchmark; cần cập nhật bảng tóm tắt này nếu dùng lần đo mới.
+Nguồn số liệu trong repository: `output/verification.csv`, `output/benchmark.csv`, `output/system-info.json`. Phương pháp đầy đủ: `output/benchmark-summary.md`. Mã tái lập: `scripts/verify.py` và `scripts/benchmark.py`. Bảng này được tự động tạo lại khi benchmark hoàn tất; có thể cập nhật từ số đo đã lưu bằng `python scripts/report_metrics.py`.
